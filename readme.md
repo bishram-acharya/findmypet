@@ -5,7 +5,7 @@ Welcome to FindMyPet, the app that brings heartwarming reunions between lost pet
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
+- [Features](#planned-features)
 - [Tech Stack](#tech-stack)
 - [Contributing](#contributing)
 - [License](#license)
