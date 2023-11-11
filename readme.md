@@ -1,7 +1,6 @@
 # FindMyPet App 🐾
 
-Welcome to FindMyPet, the app that brings heartwarming reunions between lost pets and their beloved owners! This project is not just about coding; it's a passion-driven journey to apply the first principles of computer science to solve a real-world problem.
-
+Welcome to FindMyPet, the app that brings heartwarming reunions between lost pets and their beloved owners! 
 ## Table of Contents
 
 - [Introduction](#introduction)
