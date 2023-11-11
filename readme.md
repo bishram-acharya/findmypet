@@ -26,7 +26,7 @@ Lost your furry friend? Fear not! FindMyPet is here to help. This app leverages 
 
 ## Contributing
 
-I will appreciate your interest in contributing to FindMyPet! Whether you're a seasoned developer or just starting, your ideas and code are valuable. Check out our [Contributing Guidelines](CONTRIBUTING.md) to get started.
+I will appreciate your interest in contributing to FindMyPet! Whether you're a seasoned developer or just starting, your ideas and code are valuable.
 
 ## License
 
