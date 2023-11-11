@@ -8,6 +8,4 @@ def howitworks(request):
 def contact(request):
     return render(request, 'contact.html')
 def findmypet(request):
-    return render(request,'login.html')
-def signup(request):
-    return render(request,'signup.html')
+    return render(request,'findmypet.html')

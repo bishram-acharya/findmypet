@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Pet - Upload Image</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333; /* Set text color to dark gray */
+        }
+        header {
+            background-color: #3B8FF3; /* Set nav bar background color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #76aff5;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #1f5ba6;
+            margin-bottom: 20px;
+        }
+        .upload-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #fileInput {
+            display: none;
+        }
+        label {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #34B1AA;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        label:hover {
+            background-color: #2A927F;
+        }
+        #fileName {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        #findMatchBtn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #34B1AA;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        #findMatchBtn:hover {
+            background-color: #2A927F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="https://cdn.discordapp.com/attachments/867659793103061033/1172425025874296892/logo.PNG?ex=656044e4&is=654dcfe4&hm=0023ac52ad7c5b943aedea962cbc7e41eddbdd7da846ab17f15ad4ebe4cefcaf&"
+            width="180"
+            height="100"></a>
+    </header>
+
+    <div class="container">
+        <h2>Upload Your Pet's Image</h2>
+        <div class="upload-container">
+            <input type="file" id="fileInput" />
+            <label for="fileInput">Choose Image</label>
+            <span id="fileName">No file chosen</span>
+        </div>
+
+        <button id="findMatchBtn">Find Match</button>
+        <p>
+            <a href="/report">Report a problem</a>
+        </p>
+        
+    </div>
+
+    <script>
+        // Display the selected file name
+        document.getElementById('fileInput').addEventListener('change', function () {
+            document.getElementById('fileName').textContent = this.files[0].name;
+        });
+    </script>
+</body>
+</html>

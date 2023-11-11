@@ -84,9 +84,17 @@
                 width="180"
                 height="100"></a>
             <nav>
-                <a href="/howitworks">How It Works</a>
-                <a href="/signup">Sign Up</a>
-                <a href="/contact">Contact</a>
+                {% if user.is_authenticated %}
+                    <a href="/howitworks">How It Works</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/members/logout">Logout</a>
+                {% else %}
+                    <a href="/howitworks">How It Works</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/members/signup">Sign Up</a>
+                    <a href="members/login">Login</a>
+                {% endif %}
+                
                 
             </nav>
         </div>
@@ -106,7 +114,11 @@
     </div>
 
     <div class="find-pet-button">
-        <a href="/login">Find My Pet</a>
+        {% if user.is_authenticated %}
+            <a href="/findmypet">Find My Pet</a>
+        {% else %}
+            <a href="/members/login">Find My Pet</a>
+        {% endif %}
     </div>
 </body>
 </html>
